@@ -98,7 +98,7 @@ textarea {
 
 
 body {
-    color: #262d3a;
+    color: #3E4243;
 }
 
 .content {
@@ -116,7 +116,7 @@ body {
 }
 
 .bar {
-    background-color: #262d3a;
+    background-color: #3E4243;
     float: left;
     width: 100%;
     overflow: hidden;
@@ -190,13 +190,20 @@ h2 {
 a.signup {
     display: inline-block;
     border-radius: 10px;
-    background-color: #13a463;
+    background-color: #EE9206;
     padding: 10px 24px 7px;
     text-decoration: none;
     font-weight: 700;
     color: #ffffff;
+
 }
 
+/*
+a.signup:active{
+    transition:all 0.35s ease;
+    box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 1px 2px -1px rgba(0, 0, 0, 0.2);
+}
+*/
 #intro {
     background-color: #f0f0f0;
 }
@@ -206,7 +213,7 @@ a.signup {
 }
 
 #points {
-    background-color: #262d3a;
+    background-color: #3E4243;
     color: #ffffff;
 }
 
@@ -255,12 +262,12 @@ a.signup {
 }
 
 #kima {
-    background-color: #13a463;
+    background-color: #EE9206;
     color: #ffffff;
 }
 
 footer {
-    background-color: #262d3a;
+    background-color: #3E4243;
     color: #ffffff;
 }
 
@@ -274,13 +281,25 @@ ol {
 }
 
 .participant > p {
-    background: url(../img/quote.png) no-repeat top left;
+    /*background: url(../img/quote.png) no-repeat top left; */
     background-size: 20px;
     padding-left: 25px;
     padding-right: 10px;
     text-align: left;
     font-size: 0.9em;
+    position:relative;
 }
+
+.participant > p::before {
+    color: #ee9206;
+    content: "“";
+    display: block;
+    font-size: 60px;
+    left: 0;
+    position: absolute;
+    top: 14px;
+}
+
 
 .participant-name {
     margin-bottom: 0;
