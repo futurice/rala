@@ -98,7 +98,7 @@ textarea {
 
 
 body {
-    color: #3E4243;
+    color: #4F5051;
 }
 
 .content {
@@ -116,7 +116,7 @@ body {
 }
 
 .bar {
-    background-color: #3E4243;
+    background-color: #4F5051;
     float: left;
     width: 100%;
     overflow: hidden;
@@ -163,7 +163,7 @@ header {
     font-size: 2em;
     margin-top: 3.5em;
     line-height: 30px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .title p {
@@ -213,7 +213,7 @@ a.signup:hover{
 }
 
 #points {
-    background-color: #3E4243;
+    background-color: #4F5051;
     color: #ffffff;
 }
 
@@ -267,7 +267,7 @@ a.signup:hover{
 }
 
 footer {
-    background-color: #3E4243;
+    background-color: #4F5051;
     color: #ffffff;
 }
 
