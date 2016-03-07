@@ -1,0 +1,623 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+body {
+    color: #262d3a;
+}
+
+.content {
+    max-width: 50em;
+    margin: auto;
+    text-align: center;
+    font-family: 'proxima-nova',sans-serif;
+    font-weight: 500;
+    line-height: 1.7em;
+    padding: 25px 20px 25px;
+}
+
+#summary {
+    padding-bottom: 40px;
+}
+
+.bar {
+    background-color: #262d3a;
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    height: 2em;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+}
+
+#bar-links {
+    display: inline-block;
+    height: 100%;
+    margin-right: 3vw;
+}
+
+#bar-links img {
+    height: 60%;
+    margin: 5px 10px 5px;
+}
+
+#futu-logo img {
+    height: 45%;
+}
+
+header {
+    background-image: url(../img/header_background_m.jpg);
+    background-position: center right;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    bottom: 14%;
+    width:100%;
+    text-align: center;
+}
+
+.title h1 {
+    font-family: 'proxima-nova',sans-serif;
+    color: #fefefe;
+    font-weight: 700;
+    font-size: 2em;
+    margin-top: 3.5em;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.title p {
+    font-family: 'proxima-nova',sans-serif;
+    color: #fefefe;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-top: 0.1em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+.schedule-item h3 {
+    margin-top: 1em;
+    margin-bottom: 5px;
+}
+
+.schedule-item p {
+    margin: 0;
+}
+
+a.signup {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #13a463;
+    padding: 10px 24px 7px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+#intro {
+    background-color: #f0f0f0;
+}
+
+.blurb {
+    font-weight: 700;
+}
+
+#points {
+    background-color: #262d3a;
+    color: #ffffff;
+}
+
+.point {
+    background: url(../img/checkmark.png) no-repeat center top;
+    background-size: 40px;
+    padding-top: 35px;
+    margin-top: 30px;
+}
+
+.point p {
+    font-size: 0.8em;
+}
+
+.separator {
+    background-position: right center;
+    background-size: cover;
+    height: 60vw;
+}
+
+#separator1 {
+    background-image: url(../img/separator1.jpg);
+}
+
+#separator2 {
+    background-image: url(../img/separator2.jpg);
+}
+
+#description .content p {
+    text-align: left;
+}
+
+#schedule {
+    background-color: #f0f0f0;
+}
+
+#schedule-container li + li {
+    background: url(../img/schedule_separator_h.png) no-repeat top center;
+    background-size: 50px;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+.schedule-item p {
+    font-size: 0.9em;
+}
+
+#kima {
+    background-color: #13a463;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #262d3a;
+    color: #ffffff;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+#participants h2 {
+    margin-bottom: 2em;
+}
+
+.participant > p {
+    background: url(../img/quote.png) no-repeat top left;
+    background-size: 20px;
+    padding-left: 25px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.participant-name {
+    margin-bottom: 0;
+}
+
+.participant-title {
+    margin: 0;
+}
+
+.badge img {
+    margin-top: 1em;
+    width: 25%;
+}
+
+.social-buttons img {
+    width: 35px;
+    margin: 0 4px 20px;
+}
+
+.footer-line {
+    margin-top: 70px;
+}
+
+.footer-line p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+#more-info {
+    font-size: 0.8em;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 700px) {
+    header {
+        background-image: url(../img/header_background.jpg);
+        background-position: bottom center;
+        height: 60vh;
+    }
+
+    #bar-links {
+        float: right;
+    }
+
+    .title {
+        bottom: 15%;
+    }
+
+    .title h1 {
+        font-size: 4em;
+    }
+
+    .title p {
+        font-size: 2em;
+    }
+
+    #points-container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .point {
+        background: url(../img/checkmark.png) no-repeat center top;
+        background-size: 45px;
+        float: left;
+        width: 33%;
+        margin-right: 30px;
+        padding-top: 45px;
+    }
+
+    #schedule h2 {
+        text-align: left;
+    }
+
+    #schedule-container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .separator {
+        background-position: center center;
+        background-size: cover;
+        height: 40vw;
+    }
+
+    #schedule-container li + li {
+        background: url(../img/schedule_separator.png) no-repeat center left;
+        background-size: 30px;
+        padding-left: 60px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .schedule-item {
+        width: 33%;
+        margin-right: 30px;
+    }
+
+    #participants {
+        text-align: left;
+        max-width: 900px;
+    }
+
+    #participant-container {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 400px;
+    }
+
+    #participant-container li:nth-child(even) {
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    }
+
+    #participant-container li:nth-child(odd) {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+    }
+
+    .participant {
+        width: 25%;
+        text-align: left;
+        font-size: 0.7em;
+        line-height: 1em;
+    }
+
+    .participant > p {
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+
+
+    .badge {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .badge img {
+        margin-top: 0;
+        width: 35%;
+    }
+
+    .name-title {
+        margin-left: 10px;
+    }
+
+    .participant-name {
+        margin-bottom: 8px;
+    }
+
+    .participant-title {
+        margin: 8px 0 0;
+    }
+
+    .social-buttons {
+        margin-right: 40px;
+        display: inline-block;
+        float: left;
+    }
+
+    .footer-line p {
+        text-align: left;
+        margin: 0;
+    }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
